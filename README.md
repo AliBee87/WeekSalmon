@@ -13,7 +13,7 @@ This project is built with **JavaScript using Node Express and tested with Thund
   
   cd MSSE661MongoAPI
   
-  npm install
+  npm i
   ```
   
 
@@ -72,7 +72,7 @@ git clone https://github.com/AliBee87/weeksalmon.git **(for final project. Class
 Then, in your terminal, input the following to **install React:**
 
 ```
-npx-create-react-app [file name of your choosing]
+npx create-react-app [file name of your choosing]
 ```
 
 Then, enter
@@ -91,6 +91,9 @@ Ensure the following packages are installed. If not, install the following **pac
 @fortawesome/react-fontawesome
 
 axios
+
+react-router-dom
+
 ```
 
 **Then, to run the Front End, enter npm start in your terminal.** Thanks for checking out my work! 
