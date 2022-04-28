@@ -17,7 +17,7 @@ const Home = () => {
             <br />
             <Link to="/raw">Raw</Link>
             <br />
-            <Link to="/cooked">I am not a bear</Link>
+            <Link to="/cooked">I am not a bear, I wantit cooked!</Link>
             <br />
             <Link to="/noLike">Bro I don't even like eating salmon</Link>
             <br />
