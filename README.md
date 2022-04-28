@@ -1,3 +1,5 @@
+This app contains a simple quiz that asks users several questions to determine a salmon recipe that they might enjoy. 
+
 This project is built with **JavaScript using Node Express and tested with Thunder Client** in VS. I used **MongoDB and React** as well.
 
 
