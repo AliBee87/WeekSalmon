@@ -1,70 +1,97 @@
-# Getting Started with Create React App
+This project is built with **JavaScript using Node Express and tested with Thunder Client** in VS. I used **MongoDB and React** as well.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Getting Started: Instructions for Running Back End and Front End
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Back End
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  In your editor, enter: 
+  ```
+  git clone https://github.com/AliBee87/MSSE661-Class-App.git
+  
+  cd MSSE661MongoAPI
+  
+  npm install
+  ```
+  
 
-### `npm test`
+After installing NPM, **_ensure the following packages are installed. If not, use the command npm i with these package names_**:
+  ```   
+    npm i bcrypt
+    npm i cookie-parser
+    npm i cors
+    npm i date-fns
+    npm i dotenv
+    npm i express
+    npm i jsonwebtoken
+    npm i mongoose
+    npm i uuid
+    npm i chai
+    npm i chai-http
+    npm i mocha
+   ```
+    
+You'll need to **_create a .env file in the file tree at the root. In it copy and paste the following_**:
+    
+    ACCESS_TOKEN_SECRET=
+    REFRESH_TOKEN_SECRET=
+    DATABASE_URI=mongodb+srv://<username>:<password>@cluster0.ta6fn.mongodb.net/SalmonDB?retryWrites=true&w=majority
+    
+These will require personal access tokens. To **_create a personal access token,_** write the following commands in your terminal:
+  ```
+    node
+    require('crypto').randomBytes(64).toString('hex')
+  ```
+Generate, copy and paste each output from these commands to both ACCESS_TOKEN_SECRET and REFRESH_TOKEN_SECRET, excluding the ' ' around the supplied output.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**To get the DATABASE URI**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - Sign into Mongodb.com
+  - Under "Security" select "Database Access"
+  - Select "Add New Database User" and keep the Authentication Method at Password
+  - Enter user and password, copy, select "Add User"
+  - Back in your editor, in the .env, enter the username and password into the Database URI, excluding the carrots
+  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**Then, in your terminal, enter npm run dev, and you should be good to go!**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Front End
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+In a new editor window, enter: 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+git clone https://github.com/AliBee87/MSSE661-Class-App.git **(for class project)**
+git clone https://github.com/AliBee87/weeksalmon.git **(for final project)**
+```
 
-## Learn More
+Then, in your terminal, input the following to **install React:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npx-create-react-app [file name of your choosing]
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Then, enter
 
-### Code Splitting
+```
+cd [file name that you chose]
+code .
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Ensure the following packages are installed. If not, install the following **packages using npm i:**
+```
+@fortawesome/fontawesome-svg-core
 
-### Analyzing the Bundle Size
+@fortawesome/free-solid-svg-icons
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+@fortawesome/react-fontawesome
 
-### Making a Progressive Web App
+axios
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Then, to run the Front End, enter npm start in your terminal.** Thanks for checking out my work! 
