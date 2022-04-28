@@ -66,20 +66,19 @@ Generate, copy and paste each output from these commands to both ACCESS_TOKEN_SE
 In a new editor window, enter: 
 
 ```
-git clone https://github.com/AliBee87/weeksalmon.git **(for final project. Class final is included in MSSE661 repo)**
+git clone https://github.com/AliBee87/weeksalmon.git **(for final project. Class final can be found in MSSE661 repo, branch week6)**
 ```
 
-Then, in your terminal, input the following to **install React:**
+Then, in your terminal, input 
 
 ```
-npx create-react-app [file name of your choosing]
+cd weeksalmon
 ```
 
 Then, enter
 
 ```
-cd [file name that you chose]
-code .
+npm i
 ```
 
 Ensure the following packages are installed. If not, install the following **packages using npm i:**
